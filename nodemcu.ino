@@ -7,7 +7,7 @@ hd44780_I2Cexp lcd; // Initialize the LCD object
 void setup() {
   lcd.begin(16, 2);      // Initialize the LCD dimensions (16 columns, 2 rows)
   lcd.backlight();       // Turn on the backlight
-  Serial.begin(9600);
+  Serial.begin(921600);
 
   lcd.clear();
   lcd.setCursor(0, 0);
