@@ -18,7 +18,7 @@ def should_turn_on_backlight():
     return (now.hour >= 17 or now.hour < 7)  # After 17:00 or before 7:00
 
 # Establish serial communication with NodeMCU
-ser = serial.Serial('COM3', 9600)  # Adjust 'COM3' to match your NodeMCU's serial port
+ser = serial.Serial('COM27', 921600)  # Adjust 'COM3' to match your NodeMCU's serial port
 time.sleep(2)  # Allow time for the connection to be established
 
 while True:
